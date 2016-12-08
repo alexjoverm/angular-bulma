@@ -3,13 +3,18 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { BuColumnsModule } from './columns/columns.module';
 export { BuColumnsModule } from './columns/columns.module';
 
+import { BuCommonModule } from './common/common.module';
+export { BuCommonModule } from './common/common.module';
+
 const BU_MODULES = [
-  BuColumnsModule
+  BuColumnsModule,
+  BuCommonModule
 ];
 
 @NgModule({
   imports: [
-    BuColumnsModule.forRoot()
+    BuColumnsModule.forRoot(),
+    BuCommonModule.forRoot(),
   ],
   exports: BU_MODULES
 })

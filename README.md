@@ -2,11 +2,11 @@
 
 Angular 2 UI component library built on top of [bulma](http://bulma.io/).
 
-## Installation instructions
+## Getting started
 
 Install Angular Bulma, and bulma itself:
 ```bash
-yarn add angular-bulma bulma
+yarn add angular2-bulma bulma
 ```
 
 Import bulma into your `styles.scss`

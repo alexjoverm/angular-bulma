@@ -1,23 +1,21 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'bu-columns',
   template: `
-    <div class="columns">
-      <ng-content></ng-content>
-    </div>
+    <ng-content></ng-content>
   `
 })
 export class BuColumns {
+  @HostBinding('class.columns') _class = true;
 }
 
 @Component({
   selector: 'bu-column',
   template: `
-    <div class="column">
-      <ng-content></ng-content>
-    </div>
+    <ng-content></ng-content>
   `
 })
 export class BuColumn {
+  @HostBinding('class.column') _class = true;
 }
