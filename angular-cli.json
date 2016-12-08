@@ -18,16 +18,18 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.scss"
+        "styles.css"
       ],
-      "scripts": [
-      ],
+      "scripts": [],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
     }
   ],
-  "addons": [
-  ],
-  "packages": [
-  ],
+  "addons": [],
+  "packages": [],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
@@ -39,7 +41,7 @@
     }
   },
   "defaults": {
-    "styleExt": "scss",
+    "styleExt": "css",
     "prefixInterfaces": false,
     "inline": {
       "style": false,
