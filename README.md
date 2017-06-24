@@ -1,5 +1,7 @@
 # Angular Bulma
 
+**Note: this project was never published and is abandoned**
+
 Angular 2 UI component library built on top of [bulma](http://bulma.io/).
 
 ## Getting started
